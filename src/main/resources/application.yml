@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: taroco-scheduler-demo
+server:
+  port: 8088
+taroco:
+  scheduler:
+    zk:
+      url: 127.0.0.1:2181
