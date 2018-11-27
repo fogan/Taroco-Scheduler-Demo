@@ -12,15 +12,20 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class TaskBean {
+public class LocalTaskBean {
 
     @Scheduled(fixedRate = 8000)
-    public void scheduler1() {
-        log.info("start scheduler1 ...");
+    public void fixedRate() {
+        log.info("start local fixedRate ...");
     }
 
     @Scheduled(fixedDelay = 10000)
-    public void scheduler2() {
-        log.info("start scheduler2 ...");
+    public void fixedDelay() {
+        log.info("start local fixedDelay ...");
+    }
+
+    @Scheduled(cron = "0/15 * * * * ? ")
+    public void cron() {
+        log.info("start local cron ...");
     }
 }

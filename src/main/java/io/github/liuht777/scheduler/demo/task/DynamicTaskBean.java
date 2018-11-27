@@ -20,4 +20,8 @@ public class DynamicTaskBean {
     public void dynamicTask2() {
         log.info("dynamic task2 ...");
     }
+
+    public void dynamicTask3(String param) {
+        log.info("dynamic task3, param={}", param);
+    }
 }
