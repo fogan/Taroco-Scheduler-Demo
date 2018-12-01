@@ -12,4 +12,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: taroco-scheduler
+        include: info, health, taroco-scheduler-server, taroco-scheduler-task
